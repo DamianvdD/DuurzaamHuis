@@ -1,4 +1,4 @@
-# Dit is de Repository voor de BO opdracht voor het LAM
+# Dit is de Repository voor de BO opdracht voor het DuurzaamHuis Project
 
 ## Live Website
 Link naar de Website: N/A
@@ -12,7 +12,7 @@ Link naar planning: N/A
 Gebruik git om de repository te clonen
 
 ```bash
-git clone https://github.com/DamianvdD/LAM-Website.git
+git clone https://github.com/DamianvdD/DuurzaamHuis.git
 ```
 
 ## License
