@@ -1,5 +1,5 @@
 body {
-    background-color: lightgray;
+    background-color: #222222;
     font-family: Raleway;
     text-align: center;
     color: white;
@@ -10,52 +10,76 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     grid-template-areas: "header   header"
-                         "kosten   kwh"
-                         "weer     weer"
-                         "controls controls"
+                         "kosten   weer"
+                         "kwh      water"
                          "graph    graph"
+                         "graph2   graph2"
 }
 
 .item {
-    background-color: purple;
+    background-color: #626262;
     border: 1px solid #000;
     padding: 5px;
     min-height: 50px;
 }
 
 .header {
-    background-color: rebeccapurple;
+    background-color: #3f2668;
     grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #6000ff;
 }
 
 .weer {
     grid-area: weer;
     text-align: center;
+    border-radius: 64px;
 }
 
 .graph {
     grid-area: graph;
+    border-radius: 64px;
+}
+
+.graph2 {
+    grid-area: graph2;
+    border-radius: 64px;
 }
 
 .kosten {
     grid-area: kosten;
+    border-radius: 64px;
 }
 
 .kwh {
     grid-area: kwh;
+    border-radius: 64px;
+}
+
+.water {
+    grid-area: water;
+    border-radius: 64px;
 }
 
 .controls {
     grid-area: controls;
+    border-radius: 64px;
+}
+
+#C{
+    font-size: 36px;
 }
 
 @media screen and (min-width: 900px) {
     
     #DashBoard {
         grid-template-columns: 200px 1fr 1fr 200px;
-        grid-template-areas: "header   header   header   header"
-                             "kosten   controls controls weer"
-                             "graph    graph    kwh      kwh"
+        grid-template-areas: "nav   header   header   header   header"
+                             "nav   kosten   kwh      water      weer"
+                             "nav   graph    graph    graph2   graph2"
     }
 
 }
