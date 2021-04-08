@@ -83,3 +83,11 @@ body {
     }
 
 }
+
+#grafiek {
+    background-color: #ffffff;
+    border: 1px dotted #333333;
+    border-radius: 60px;
+    width: 800px;
+    height: 600px;
+}
