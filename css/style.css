@@ -87,7 +87,7 @@ body {
 #grafiek {
     background-color: #ffffff;
     border: 1px dotted #333333;
-    border-radius: 60px;
+    border-radius: 40px;
     width: 800px;
     height: 600px;
 }
