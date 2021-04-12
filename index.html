@@ -9,8 +9,10 @@
     <link rel="shortcut icon" href="Images/logodimvo.png" sizes="256x256">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
     <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <script src="js/request.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/grafiek.js"></script>
+    
 </head>
 
 <body>
@@ -18,7 +20,9 @@
         <div class="item header">HEADER</div>
         <div class="item nav">NAV</div>        
         <div class="item kwh">KWH</div>
-        <div class="item water">WATER</div>
+        <div class="item water">Water verbruik over 1 week.
+            <p id="Standen"></p>
+        </div>
         <div class="item weer">WEER
             <svg width="90%" height="90%" viewBox="0 0 42 42">
                 <circle cx="21" cy="21" r=" 15.91549430918954" fill="transparent" stroke="rgba(200, 200, 200, 0.5)" stroke-width="1"></circle>
@@ -44,7 +48,7 @@
         </div>
         <div class="item kosten">KOSTEN</div>
         <div class="item graph">GRAPH</div>
-        <div class="item graph2">Lijn Grafiek <br>Rood = KWH <br>Oranje = Water
+        <div class="item graph2">Lijn Grafiek <br>Rood = KWH | Oranje = Water
             <div id="grafiek">
 
             </div>
