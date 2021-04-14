@@ -26,11 +26,15 @@ body {
 .header {
     background-color: #3f2668;
     grid-area: header;
+    border-bottom-left-radius: 64px;
+    border-bottom-right-radius: 64px;
 }
 
 .nav {
     grid-area: nav;
     background-color: #6000ff;
+    border-top-right-radius: 64px;
+    border-bottom-right-radius: 64px;
 }
 
 .weer {
@@ -69,25 +73,136 @@ body {
     border-radius: 64px;
 }
 
-#C{
-    font-size: 36px;
-}
-
 @media screen and (min-width: 900px) {
     
     #DashBoard {
         grid-template-columns: 200px 1fr 1fr 200px;
         grid-template-areas: "nav   header   header   header   header"
-                             "nav   kosten   kwh      water      weer"
+                             "nav   kosten   water      water      weer"
                              "nav   graph    graph    graph2   graph2"
     }
 
 }
 
 #grafiek {
-    background-color: #ffffff;
-    border: 1px dotted #333333;
+    background-color: #333333;
     border-radius: 40px;
+    width: 700px;
+    height: 500px;
+}
+
+.ct-grids line {
+    color: white;
+}
+
+.ct-labels span {
+    color: white;
+}
+
+.ct-grid{ 
+    stroke: white;
+}
+
+.ct-series-a .ct-line,
+.ct-series-a .ct-point {
+  stroke: #6000ff;
+}
+
+.ct-series-b .ct-line,
+.ct-series-b .ct-point {
+  stroke: #b400ff;
+}
+
+.chart{
     width: 800px;
     height: 600px;
+    display: flex; 
+    justify-content: center; 
+    place-items: center; 
+}
+
+.numbers{
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 100%;
+    display: inline-block, flex;
+    justify-content: center; 
+    place-items: center;
+    
+}
+
+.numbers li{
+    list-style: none;
+    height: 150px;
+    position: relative;
+    bottom: 1px;
+}
+
+.numbers span{
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+.bars{
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    background: #333333;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 0 10px 0 #333333;
+    border-radius: 5px;
+}
+
+.bars li{
+    display: table-cell;
+    width: 100px;
+    height: 300px;
+    position: relative;    
+}
+
+.bars span{
+    width: 100%;
+    position: absolute;
+    bottom: -30px;
+    left: 30px;
+    text-align: left;
+}
+
+.bars .bar{
+    display: block;
+    background: #6000ff;
+    width: 50px;
+    position: absolute;
+    bottom: 0cm;
+    margin-left: 25px;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(98, 0, 255, 0.5);
+    transition: 0.5s;
+    transition-property: background, box-shadow;
+}
+
+.bars .bar:hover{
+    background: #b400ff;
+    box-shadow: 0 0 10px 0 rgba(180, 0, 255, 0.5);
+    cursor: pointer;
+}
+
+.bars .bar:before{
+    color: #ffffff;
+    content: attr(data-percentage)'%';
+    position: relative;
+    bottom: 20px;
+}
+
+#temperatuur {
+    color: white;
 }

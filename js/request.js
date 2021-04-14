@@ -14,7 +14,7 @@ xmlhttp.onreadystatechange = function() {
 };
 
 // OPEN en verstuur
-xmlhttp.open("GET", "php/standen2json.php", true);
+xmlhttp.open("GET", "../standen2json.php", true);
 xmlhttp.send();
 
 // MAAK het resultaat op basis van de teruggezonden gegevens

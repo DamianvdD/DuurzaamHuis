@@ -1,5 +1,5 @@
 {
-    "labels": ["29 Februari", "1 Maart", "2 Maart", "3 Maart", "4 Maart", "5 Maart", "6 Maart", "7 Maart", "8 Maart", "9 Maart"],
+    "labels": ["29 Feb", "1 Mrt", "2 Mrt", "3 Mrt", "4 Mrt", "5 Mrt", "6 Mrt", "7 Mrt", "8 Mrt", "9 Mrt"],
     "series": [
         [17, 14.23, 12.20, 15.43, 13.87, 11.38, 16.55, 14.88, 11.11, 15.92],
         [16, 15.23, 2.20, 28.43, 26.87, 6.38, 1.55, 24.88, 21.11, 17.92]
