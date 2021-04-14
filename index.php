@@ -28,11 +28,11 @@
         </div>
         <div class="item weer"><h1>Weer</h1><br>
             <svg width="70%" height="70%" viewBox="0 0 42 42">
-                <circle cx="20" cy="20" r=" 15.91549430918954" fill="transparent" stroke="rgba(200, 200, 200, 0.5)" stroke-width="1"></circle>
-                <circle cx="20" cy="20" r=" 15.91549430918954" fill="transparent" stroke="#b400ff" stroke-width="1" stroke-dasharray="15 85" stroke-dashoffset="75" id="cirkelBoog"></circle>
+                <circle cx="20" cy="20" r=" 15.91549430918954" fill="transparent" stroke="rgba(200, 200, 200, 0.5)" stroke-width="2"></circle>
+                <circle cx="20" cy="20" r=" 15.91549430918954" fill="transparent" stroke="#b400ff" stroke-width="2" stroke-dasharray="15 85" stroke-dashoffset="75" id="cirkelBoog"></circle>
                 <g class="temp">
-                    <text id="temperatuur" x="30%" y="46%"></text>
-                    <text id="eenheid" x="30%" y="80%">&deg;C</text>
+                    <text id="temperatuur" x="30%" y="45%"></text>
+                    <text id="eenheid" x="30%" y="79%">&deg;C</text>
                 </g>
             </svg>
             <script>
